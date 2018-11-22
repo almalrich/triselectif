@@ -1,0 +1,21 @@
+.poubelles1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.poubelles{
+    display: flex;
+    justify-content: space-between;
+}
+
+#deche{
+
+    width: 100px;
+    height: 100px;
+}
+
+#deche{
+    display: flex;
+    justify-content: center;
+    margin-left: 750px;
+}
