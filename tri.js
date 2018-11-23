@@ -3,6 +3,7 @@ alert("bonjour veuillez me placer où il faut merci");
 var dechet = ["plastique", "carton", "bouteilleplastique", "papier", "bouteilleverre", "bocaux", "orduresmenagere", "epluchures", "journaux", "tissu"];
 var dechet2 = ["dechets/sacplastique.jpg", "dechets/carton.jpeg", "dechets/boutplast.jpg", "dechets/papier.jpg", "dechets/bouteillepinard.jpg", "dechets/bocaux-en-verre-cuisine.jpg", "dechets/orduremen.jpg", "dechets/epluchures.jpeg", "dechets/journal.jpg", "dechets/tissu.jpg"]
 
+var bonneReponse;
 var vie = 10;
 /*
 var jaune = [0, 1, 2];
@@ -25,91 +26,121 @@ function ana() {
 
 ana();
 document.getElementById("jaune").addEventListener("click", function () {
-    if (util == 0 || util == 1 || util == 2) {
-        /* document.getElementById("reponses").innerHTML = "Bravo!!";
-         score++;*/
+    if (util === 0 || util === 1 || util === 2) {
+        document.getElementById("reponses").innerHTML = "Bravo!!";
+        score++;
         alert("bravo");
-        ana();
-    }
-    if (util == 4 || util == 5 || util == 8) {
-        document.getElementById("reponses").innerHTML = "c'étais la verte";
 
     }
-    if (util == 3 || util == 9) {
-        document.getElementById("reponses").innerHTML = "c'étais la bleue";
+    else {
 
-    }
-    if (util == 6 || util == 7) {
-        document.getElementById("reponses").innerHTML = "c'étais la marron";
+        if (util === 4 || util === 5 || util === 8) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la verte";
 
+        }
+        if (util === 3 || util === 9) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la bleue";
+
+        }
+        if (util === 6 || util === 7) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la marron";
+
+        }
     }
+
+    ana();
+
 });
 
 
 document.getElementById("vert").addEventListener("click", function () {
-    if (util == 4 || util == 5 || util == 8) {
-        /*document.getElementById("reponses").innerHTML = "Bravo!!";
-        score++;*/
+    if (util === 4 || util === 5 || util === 8) {
+        document.getElementById("reponses").innerHTML = "Bravo!!";
+        score++;
         alert("bravo");
-        ana();
+
 
     }
-    if (util == 0 || util == 1 || util == 2) {
-        document.getElementById("reponses").innerHTML = "c'étais la jaune";
+    else {
+        if (util === 0 || util === 1 || util === 2) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la jaune";
 
-    }
-    if (util == 3 || util == 9) {
-        document.getElementById("reponses").innerHTML = "c'étais la bleue";
+        }
+        if (util === 3 || util === 9) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la bleue";
 
-    }
-    if (util == 6 || util == 7) {
-        document.getElementById("reponses").innerHTML = "cétais la marron";
+        }
+        if (util === 6 || util === 7) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "cétais la marron";
 
+        }
     }
+    ana()
 });
 
 document.getElementById("bleu").addEventListener("click", function () {
-    if (util == 3 || util == 9) {
-        /*document.getElementById("reponses").innerHTML = "Bravo!!";
-        score++;*/
+    if (util === 3 || util === 9) {
+        document.getElementById("reponses").innerHTML = "Bravo!!";
+        score++;
         alert("bravo");
-        ana();
-        if (util == 0 || util == 1 || util == 2) {
-            document.getElementById("reponses").innerHTML = "c'étais la jaune";
+    }
+    else {
+        if (util === 0 || util === 1 || util === 2) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la jaune";
 
         }
-        if (util == 4 || util == 5 || util == 8) {
-            document.getElementById("reponses").innerHTML = "c'étais la verte";
+
+        if (util === 4 || util === 5 || util === 8) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la verte";
 
         }
-        if (util == 6 || util == 7) {
-            document.getElementById("reponses").innerHTML = "c'étais la marron";
+        if (util === 6 || util === 7) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la marron";
 
         }
     }
+    ana()
+
 });
 
 
 document.getElementById("marron").addEventListener("click", function () {
-    if (util == 6 || util == 7) {
-        /*document.getElementById("reponses").innerHTML = "Bravo!!";
-        score++;*/
+    if (util === 6 || util === 7) {
+        document.getElementById("reponses").innerHTML = "Bravo!!";
+        score++;
         alert("bravo");
-        ana();
-        if (util == 0 || util == 1 || util == 2) {
-            document.getElementById("reponses").innerHTML = "c'étais la jaune";
+    }
+    else {
+        if (util === 0 || util === 1 || util === 2) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la jaune";
 
         }
-        if (util == 4 || util == 5 || util == 8) {
-            document.getElementById("reponses").innerHTML = "c'étais la verte";
+        if (util === 4 || util === 5 || util === 8) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la verte";
 
         }
-        if (util == 3 || util == 9) {
-            document.getElementById("reponses").innerHTML = "c'étais la bleue";
+        if (util === 3 || util === 9) {
+            bonneReponse=document.getElementById("reponses").innerHTML = "c'étais la bleue";
 
         }
     }
+    ana()
+
 });
+/*
+document.getElementById("scor").addEventListener("click", function () {
+    if (document.getElementById("1page").display.style == block) {
+        document.getElementById("1page").display.style == none;
+    }
+
+    else {
+        document.getElementById("nouvelle").display == block;
+    }
+
+
+});*/
+
+document.getElementById("score").innerHTML = bonneReponse;
 
 // document.getElementById("deche").src = jauneImg[0];
 /*

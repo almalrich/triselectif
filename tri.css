@@ -1,21 +1,50 @@
-.poubelles1{
-    display: flex;
-    justify-content: space-between;
+h1{
+    margin-left: 40%;
 }
+
 
 .poubelles{
-    display: flex;
-    justify-content: space-between;
+   position: absolute;
+    top: 70%;
 }
+
+.poubelles1{
+    position: absolute;
+}
+
 
 #deche{
 
-    width: 100px;
-    height: 100px;
+    margin-left: 35%;
+    width: 30%;
+    height: 30%;
+    margin-top: 20%;
 }
 
-#deche{
-    display: flex;
-    justify-content: center;
-    margin-left: 750px;
+#vert{
+    right: 0%;
 }
+
+#marron{
+
+    right: 0%;
+}
+
+
+
+#reponses{
+    margin-top: 65%;
+}
+
+#score{
+    margin-top: 10%;
+}
+
+#bouto{
+    margin-top: 60%;
+}
+
+#nouvelle{
+    display: none;
+}
+
